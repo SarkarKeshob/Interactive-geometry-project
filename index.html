@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genious</title>
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+
+    <!-- Daisy Ui -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.20/dist/full.min.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- My Css -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body class="mx-4">
+
+    <header class="mb-10">
+        <div class="navbar bg-sky-100">
+            <div class="flex-1">
+              <a class=" btn text-xl"> <span class="text-slate-400font-bold">Interactive</span>
+                 <span class="text-sm"> Geometry Genious</span></a>
+            </div>
+            <div class="flex-none">
+              <ul class="menu menu-horizontal px-1">
+                <li class="btn btn-accent btn-md  text-xl"><a >Blog</a></li>
+              </ul>
+            </div>
+          </div>
+    </header>
+
+    <main>
+        <section class="grid md:grid-flow-row md:grid-cols-5">
+            <!-- Card Container -->
+            <div class="col-span-4 grid md:grid-cols-3  gap-5">
+                <!-- card 1 -->
+                <div class="card  bg-base-100 shadow-2xl">
+                    <figure class="px-10 pt-10">
+                      <img src="images/triangle.png" alt="Triangle" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-slate-600 font-semibold text-xl">Triangle</h2>
+                      <p>Area (A)= 0.5*b*h</p>
+
+                       <div class=" grid md:grid-cols-6 mb-4">
+                        
+                            <input type="text" placeholder="b" class="bg-slate-300 md:col-span-2 outline-none px-2 rounded-sm" id="triangle-base">
+                            <span>cm</span>
+                            <input type="text" placeholder="h" class="bg-slate-300 md:col-span-2 outline-none px-2 rounded-sm" id="triangle-height">
+                            <span>cm</span>
+                       </div>
+                      <div class="card-actions w-full justify-center">
+                        <button class="w-5/6 btn btn-accent text-white font-semibold" id="triangle-calculate">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card  bg-base-100 shadow-2xl">
+                    <figure class="px-10 pt-16">
+                      <img src="images/rectangle.png" alt="Rectangle" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-slate-600 font-semibold text-xl">Rectangle</h2>
+                      <p>Area (A)= w*l</p>
+
+                       <div class=" grid md:grid-cols-6 mb-4">
+                        
+                            <input type="text" placeholder="w" class="bg-slate-300 md:col-span-2 outline-none px-2 rounded-sm" id="rectangle-width">
+                            <span>cm</span>
+                            <input type="text" placeholder="l" class="bg-slate-300 md:col-span-2 outline-none px-2 rounded-sm" id="rectangle-length">
+                            <span>cm</span>
+                       </div>
+                      <div class="card-actions w-full justify-center">
+                        <button class="w-5/6 btn btn-accent text-white font-semibold" id="rectangle-calculate">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card  bg-base-100 shadow-2xl">
+                    <figure class="px-10 pt-20">
+                      <img src="images/parallelogram.png" alt="Parallelogram" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-slate-600 font-semibold text-xl">Parallelogram</h2>
+                      <p>Area (A)= b*h</p>
+
+                       <div class=" grid md:grid-cols-6 mb-4">
+                        
+                            <input type="text" placeholder="b" class="bg-slate-300 md:col-span-2 outline-none px-2 rounded-sm" id="parallelogram-base">
+                            <span>cm</span>
+                            <input type="text" placeholder="h" class="bg-slate-300 md:col-span-2 outline-none px-2 rounded-sm" id="parallelogram-height">
+                            <span>cm</span>
+                       </div>
+                      <div class="card-actions w-full justify-center">
+                        <button class="w-5/6 btn btn-accent text-white font-semibold" id="parallelogram-calculate">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="images/rhombus.png" alt="Rhombus" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-slate-600 font-semibold text-2xl">Rhombus</h2>
+                      <p>Area (A)= 0.5*d<sub>1</sub>*d<sub>2</sub></p>
+
+                       <div class=" grid md:grid-cols-6 mb-4">
+                        
+                            <input type="text" placeholder="d2" class="bg-slate-300 md:col-span-2 outline-none px-2 rounded-sm" id="rhombus-dia1">
+                            <span>cm</span>
+                            <input type="text" placeholder="d2" class="bg-slate-300 md:col-span-2 outline-none px-2 rounded-sm" id="rhombus-dia2">
+                            <span>cm</span>
+                       </div>
+                      <div class="card-actions w-full justify-center">
+                        <button class="w-5/6 btn btn-accent text-white font-semibold" id="rhombus-calculate">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- card 5 -->
+                <div class="card  bg-base-100 shadow-2xl">
+                    <figure class="px-10 pt-10">
+                      <img src="images/pentagon.png" alt="Pentagon" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-slate-600 font-semibold text-2xl">Pentagon</h2>
+                      <p>Area (A)= 0.5*p*b</p>
+
+                       <div class=" grid md:grid-cols-6 mb-4">
+                        
+                            <input type="text" placeholder="p" class="bg-slate-300 md:col-span-2 outline-none px-2 rounded-sm" id="pentagon-p">
+                            <span>cm</span>
+                            <input type="text" placeholder="b" class="bg-slate-300 md:col-span-2 outline-none px-2 rounded-sm" id="pentagon-b">
+                            <span>cm</span>
+                       </div>
+                      <div class="card-actions w-full justify-center">
+                        <button class="w-5/6 btn btn-accent text-white font-semibold" id="pentagon-calculate">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- card 6 -->
+                <div class="card  bg-base-100 shadow-2xl">
+                    <figure class="px-10 pt-16">
+                      <img src="images/ellipse.png" alt="Ellipse" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-slate-600 font-semibold text-2xl">Ellipse</h2>
+                      <p>Area (A)= &pi;*b*h</p>
+
+                       <div class=" grid md:grid-cols-6 mb-4">
+                        
+                            <input type="text" placeholder="b" class="bg-slate-300 md:col-span-2 outline-none px-2 rounded-sm" id="ellipse-breadth">
+                            <span>cm</span>
+                            <input type="text" placeholder="h" class="bg-slate-300 md:col-span-2 outline-none px-2 rounded-sm" id="ellipse-height">
+                            <span>cm</span>
+                       </div>
+                      <div class="card-actions w-full justify-center">
+                        <button class="w-5/6 btn btn-accent text-white font-semibold" id="ellipse-calculate">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Area Calculator -->
+            <div class="h-[454px] rounded-lg border border-[rgba(17, 17, 17, 0.10)
+
+            ]">
+                <h3 class="text-3xl text-center">
+                    Area Calculator
+                </h3>
+                <div class="text-2xl font-semibold text-center text-red-600 mt-20" id="area-calculator">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/functions.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
